@@ -186,8 +186,8 @@
 // The final temperature is calculated as (measuredTemp * GAIN) + OFFSET.
 #define TEMP_SENSOR_AD595_OFFSET  0.0
 #define TEMP_SENSOR_AD595_GAIN    1.0
-#define TEMP_SENSOR_AD8495_OFFSET 0.0
-#define TEMP_SENSOR_AD8495_GAIN   1.0
+#define TEMP_SENSOR_AD8495_OFFSET -247.5
+#define TEMP_SENSOR_AD8495_GAIN   10.0/6.6
 
 /**
  * Controller Fan
@@ -1489,7 +1489,7 @@
 /**
  * M43 - display pin status, watch pins for changes, watch endstops & toggle LED, Z servo probe test, toggle pins
  */
-//#define PINS_DEBUGGING
+#define PINS_DEBUGGING //AKR
 
 /**
  * Auto-report temperatures with M155 S<seconds>
