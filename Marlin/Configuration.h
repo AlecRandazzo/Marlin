@@ -890,7 +890,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS 205 //AKR
 #define Y_MAX_POS 255 //AKR
-#define Z_MAX_POS 185 //AKR
+#define Z_MAX_POS 200 //AKR
 /**
  * Software Endstops
  *
