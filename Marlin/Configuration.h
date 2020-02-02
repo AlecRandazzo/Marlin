@@ -889,9 +889,9 @@
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
 #define BLTOUCH //AKR
-#define X_PROBE_OFFSET_FROM_EXTRUDER 0 //AKR
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -35 //AKR
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 9.2 //AKR
+#define X_NOZZLE_TO_PROBE_OFFSET 0 //AKR
+#define Y_NOZZLE_TO_PROBE_OFFSET -35 //AKR
+#define Z_NOZZLE_TO_PROBE_OFFSET 9.2 //AKR
 
 
 /**
