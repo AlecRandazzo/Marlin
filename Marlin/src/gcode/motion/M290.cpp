@@ -46,9 +46,9 @@
         && active_extruder == 0
       #endif
     ) {
-      probe.offset.z += offs;
+      probe_offset.z += offs;
       SERIAL_ECHO_START();
-      SERIAL_ECHOLNPAIR(MSG_PROBE_OFFSET MSG_Z ": ", probe.offset.z);
+      SERIAL_ECHOLNPAIR(MSG_PROBE_OFFSET MSG_Z ": ", probe_offset.z);
     }
     else {
       #if ENABLED(BABYSTEP_HOTEND_Z_OFFSET)
@@ -98,7 +98,7 @@ void GcodeSuite::M290() {
     SERIAL_ECHO_START();
 
     #if ENABLED(BABYSTEP_ZPROBE_OFFSET)
-      SERIAL_ECHOLNPAIR(MSG_PROBE_OFFSET " " MSG_Z, probe.offset.z);
+      SERIAL_ECHOLNPAIR(MSG_PROBE_OFFSET " " MSG_Z, probe_offset.z);
     #endif
 
     #if ENABLED(BABYSTEP_HOTEND_Z_OFFSET)

@@ -20,7 +20,7 @@
  *
  */
 
-#include "../inc/MarlinConfigPre.h"
+#include "../inc/MarlinConfig.h"
 
 #if ENABLED(BARICUDA)
 

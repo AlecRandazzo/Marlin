@@ -30,11 +30,11 @@
 /**
  * G31: Deploy the Z probe
  */
-void GcodeSuite::G31() { probe.deploy(); }
+void GcodeSuite::G31() { DEPLOY_PROBE(); }
 
 /**
  * G32: Stow the Z probe
  */
-void GcodeSuite::G32() { probe.stow(); }
+void GcodeSuite::G32() { STOW_PROBE(); }
 
 #endif // Z_PROBE_SLED

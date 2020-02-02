@@ -32,7 +32,7 @@
  * M401: Deploy and activate the Z probe
  */
 void GcodeSuite::M401() {
-  probe.deploy();
+  DEPLOY_PROBE();
   report_current_position();
 }
 
@@ -40,9 +40,9 @@ void GcodeSuite::M401() {
  * M402: Deactivate and stow the Z probe
  */
 void GcodeSuite::M402() {
-  probe.stow();
+  STOW_PROBE();
   #ifdef Z_AFTER_PROBING
-    probe.move_z_after_probing();
+    move_z_after_probing();
   #endif
   report_current_position();
 }
